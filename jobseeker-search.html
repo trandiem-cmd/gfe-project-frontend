@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GFE - Gig For Everyone</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+      <img src="./Assets/GFE logo.png" alt="GFE logo" class="logo">
+    <div class="login-dropdown ms-auto">
+      <a class="login-btn" href="./signup.html">Sign up</a>
+      <button class="btn btn-secondary dropdown-toggle login-btn" type="button" data-bs-toggle="dropdown">
+          <img src="./Assets/menu-icon.png" class="menu-icon" alt="Menu">
+      </button>
+        <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="./index.html">Home</a></li>
+            <li><a class="dropdown-item" href="./about.html">About Us</a></li>
+            <li><a class="dropdown-item" href="./contact.html">Contact Us</a></li>
+            <li><a class="dropdown-item" href="./faq.html">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<div class="container">
+
+  <h3>Looking for a job?</h3>
+  <h3>GFE helps you find a flexible local work!</h3>
+
+   <div class="buttons">
+    <button onclick="showCard('childcare')" class="active">👶 Childcare</button>
+    <button onclick="showCard('cleaning')" class="active">🧼 Cleaning</button>
+    <button onclick="showCard('elderly')" class="active">👵 Elderly Care</button>
+  </div>
+
+  <!-- Card -->
+  <div id="card" class="card"></div>
+
+</div>
+
+<script>
+  const cardData = {
+    childcare: {
+      title: "Babysitter    [£10-15/hr]",
+      img: "./Assets/img-Childcare.png",
+      text: "Are you looking for a fulfilling job working with children? Do you want to work flexible hours with excellent opportunities for professional development? Explore hundreds of childcare job offers available on GFE! We offer a wide selection of nanny jobs, babysitting jobs and childminding jobs. Find a job that matches your requirements and preferences. Register on GFE and find your dream job in childcare today!",
+    },
+    cleaning: {
+      title: "House Cleaner  [£12-18/hr]",
+      img: "./Assets/cleaning-searchImg.png",
+      text: "GFE offers a huge selection of job opportunities to suit your skills and preferences. Whether you specialise in office cleaning, house and apartment cleaning, rental property cleaning, or housekeeping, you'll find plenty of available work near you. Our platform ensures you can easily find and apply for jobs in your local area, making it convenient to work close to home. With GFE, the perfect cleaning or housekeeping job is just a few clicks away.",
+    },
+    elderly: {
+      title: "ELDERLY CARE   [£15-20/hr]",
+      img: "./Assets/img-ElderlyCare.png",
+      text: "Join our GFE community today and discover a wide range of jobs in elderly care. Whether you’re interested in working as a caregiver or companion, we offer new job postings daily, allowing you to find the perfect match for your skills.",
+    }
+  };
+
+  function showCard(type) {
+    const data = cardData[type];
+
+    document.getElementById("card").innerHTML = `
+      <img src="${data.img}" alt="">
+      <h3>${data.title}</h3>
+      <p>${data.text}</p>
+      <a href="./signup.html" class="find-workers-btn">Sign up for find jobs</a>
+    `;
+
+    // update active button
+    document.querySelectorAll(".buttons button").forEach(btn => {
+      btn.classList.remove("active");
+    });
+
+    event.target.classList.add("active");
+  }
+
+  // Load default card
+  showCard('childcare');
+</script>
+
+<div class="steps">
+  <h3>How does it work?</h3>
+    <div class="step">
+      <img src="./Assets/number1.png" class="number">
+      <div class="step-text">
+      <h3>Sign up</h3>
+      <p>Create you account in minutes.</p>
+      </div>
+    </div>
+    <div class="step">
+      <img src="./Assets/number2.png" class="number">
+      <div class="step-text">
+      <h3>Create your profile</h3>
+      <p>Add your skills, experience and availability.</p>
+      </div>
+    </div> 
+    <div class="step">
+      <img src="./Assets/number3.png" class="number"> 
+      <div class="step-text">
+      <h3>Browse local gigs</h3>
+      <p>Find jobs that match your schedule.</p>
+      </div>
+    </div>
+    <div class="step">
+      <img src="./Assets/number4.png" class="number"> 
+      <div class="step-text">
+      <h3>Apply & get paid</h3>
+      <p>Chat with clients, get hired and paid.</p>
+      </div>
+    </div>
+</div>
+
+  <footer class="footer">
+
+  <div class="footer-links">
+    <a href="./about.html">About us</a>
+    <a href="./contact.html">Contact us</a>
+    <a href="./faq.html">FAQ</a>
+  </div>
+
+  <div class="footer-line"></div>
+
+  <p>© 2026 GFE — All rights reserved</p>
+
+</footer>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

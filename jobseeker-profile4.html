@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-light">
+    <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+        <img src="./Assets/GFE logo.png" alt="GFE logo" class="logo">
+        <div class="login-dropdown ms-auto">
+            <button class="btn btn-secondary dropdown-toggle login-btn" type="button" data-bs-toggle="dropdown">
+            <img src="./Assets/menu-icon.png" class="menu-icon" alt="Menu">
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="./index.html">Home</a></li>
+            <li><a class="dropdown-item" href="./about.html">About Us</a></li>
+            <li><a class="dropdown-item" href="./contact.html">Contact Us</a></li>
+            <li><a class="dropdown-item" href="#">FAQ</a></li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <div class="content">
+      <div class="content-poster">
+          <h1>Complete your profile</h1>
+          <h2>Share your experience and set your hourly rate.</h2>
+      </div>
+      <h5 class="mt-4">Step 4 of 4</h5>
+      <div class="progress-custom mb-2">
+          <div class="progress-bar-custom4"></div>
+      </div>
+      <div class="mb-4">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot active"></span>
+      </div>
+      <div id="profile-review">
+        <h4 class="fw-bold mt-4">Review your profile</h4>
+        <div class="profile-card">
+          <div class="photo-box" style="position: relative">
+            <i class="bi bi-camera camera-icon"></i>
+            <i class="bi bi-person person-icon"></i>
+          </div>
+          <div id="info-review">
+            <h5 id="name-review" style="color:#5A3AB0"></h5>
+            <div style="display: flex; gap: 15px;">
+              <span id="location-review"></span>
+              <span id="service-review"></span>
+            </div>
+            <p id="experience-review"></p>
+            <p id="rate-review"></p>
+          </div>
+        </div>
+        <h5 class="fw-bold mt-4">Skills</h5>
+        <div id="skills-review"></div>
+        <h5 class="fw-bold mt-4">About you</h5>
+        <div id="about-you-review" class="form-control mb-2" style="background-color: #f0e9f0"></div>
+      </div>
+      <div class="form-actions mb-3">
+        <button type="button" class="back-btn" id="back-btn">Back</button>
+        <button type="submit" class="next-btn" id="submit-profile-btn2">Create profile</button>
+      </div>
+
+      <p class="add-logo">
+        <img src="./Assets/GFE logo.png" alt="GFE logo" class="logo">
+      </p>
+      <div class="footer">
+        <div class="footer-links">
+          <p><a class="link" href="#">About Us</a></p>
+          <p><a class="link" href="#">Contact Us</a></p>
+          <p><a class="link" href="#">FAQ</a></p>
+        </div>
+        <div class="footer-copyright">
+          <p>© 2026 GFE. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/jobseeker.js" type="module" defer></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GFE - Gig For Everyone</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="jobseeker-application-page">
+
+  <div class="top-bar">
+    <img src="./Assets/GFE logo.png" class="logo">
+    <div class="right-side">
+      <a href="index.html" class="signup-btn">Log out</a>
+      <img src="./Assets/menu-icon.png" class="menu-icon" id="menuBtn">
+    </div>
+  </div>
+
+  <div id="menuOverlay" class="menu-overlay" style="display: none;">
+    <div class="menu-card">
+      <div class="menu-top">
+        <span class="close-btn" id="closeBtn">✕</span>
+      </div>
+      <div class="menu-links">
+        <a href="jobseeker-job-offers.html">Search</a>
+        <a href="jobseeker-profile-page.html">My profile</a>
+        <a href="jobseeker-dashboard.html">Dashboard</a>
+        <a href="jobseeker-inbox.html">Messages</a>
+        <a href="jobseeker-application.html">My applications</a>
+        <a href="jobseeker-saved-jobs.html">❤️ Saved jobs</a>
+      </div>
+      <div class="menu-bottom">
+        <a href="contact.html" class="help-btn">Need Help?</a>
+        <a href="index.html" class="logout-small">Log out</a>
+      </div>
+    </div>
+  </div>
+
+  <section class="welcome">
+    <h2>My applications</h2>
+    <p>Track the jobs you have applied for</p>
+  </section>
+
+  <div class="filter-buttons">
+    <button class="filter-btn all" data-filter="all">All</button>
+    <button class="filter-btn pending" data-filter="pending">Pending</button>
+    <button class="filter-btn accepted" data-filter="accepted">Accepted</button>
+    <button class="filter-btn rejected" data-filter="rejected">Rejected</button>
+  </div>
+
+  <div id="application-list"></div>
+
+  <div class="tips-box">
+    <h4>💬 Tips for your applications</h4>
+    <p>✔ Apply quickly to new jobs</p>
+    <p>✔ Keep your profile updated</p>
+    <p>✔ Respond to clients fast</p>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="#">About us</a>
+      <a href="#">Contact us</a>
+      <a href="#">FAQ</a>
+    </div>
+    <div class="footer-line"></div>
+    <p>© 2026 GFE — All rights reserved</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/jobseeker.js" defer type="module"></script>
+</body>
+</html>

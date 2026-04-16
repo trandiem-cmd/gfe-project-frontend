@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GFE - Gig For Everyone</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+      <img src="./Assets/GFE logo.png" alt="GFE logo" class="logo">
+    <div class="login-dropdown ms-auto">
+      <a class="login-btn" href="./signup.html">Sign up</a>
+      <button class="btn btn-secondary dropdown-toggle login-btn" type="button" data-bs-toggle="dropdown">
+          <img src="./Assets/menu-icon.png" class="menu-icon" alt="Menu">
+      </button>
+        <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="./index.html">Home</a></li>
+            <li><a class="dropdown-item" href="./about.html">About Us</a></li>
+            <li><a class="dropdown-item" href="./contact.html">Contact Us</a></li>
+            <li><a class="dropdown-item" href="./faq.html">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<div class="container">
+
+  <h3>Looking for a worker?</h3>
+  <h3>GFE helps you find trusted local help!</h3>
+
+  <div class="buttons">
+    <button onclick="showCard('childcare')" class="active">👶 Childcare</button>
+    <button onclick="showCard('cleaning')" class="active">🧼 Cleaning</button>
+    <button onclick="showCard('elderly')" class="active">👵 Elderly Care</button>
+  </div>
+
+  <!-- Card -->
+  <div id="card" class="card"></div>
+
+</div>
+
+<script>
+  const cardData = {
+    childcare: {
+      title: "CHILDCARE", 
+      img: "./Assets/img-Childcare.png",
+      text: "Finding childcare is about more than availability , It is about trust, safety, and choosing someone who fits your family. GFE helps parents discover trusted local babysitters and nannies for everyday support, after-school care, evenings out, and flexible last-minute help. View profiles, compare experience, read reviews from real people, and book childcare that works for your home, your routine, and your child.",
+    },
+    cleaning: {
+      title: "CLEANING",
+      img: "./Assets/img-Cleaning.png",
+      text: "Are you looking for a reliable and trustworthy cleaner? You've come to the right place! At GFE, we have a wide range of candidates who can clean your homes, apartments, offices and rental properties. We strive to ensure that each available cleaner provides the highest quality services at competitive prices.",
+    },
+    elderly: {
+      title: "ELDERLY CARE",
+      img: "./Assets/img-ElderlyCare.png",
+      text: "Are you searching for reliable and trustworthy care for an elderly family member? GFE is here to help you find and connect with experienced elderly caregivers. With our platform, you can safely and securely choose the ideal elderly carer who meets the specific needs of your seniors.",
+    }
+  };
+
+  function showCard(type) {
+    const data = cardData[type];
+
+    document.getElementById("card").innerHTML = `
+      <img src="${data.img}" alt="">
+      <h3>${data.title}</h3>
+      <p>${data.text}</p>
+      <a href="./signup.html" class="find-workers-btn">Sign up for find workers</a>
+    `;
+
+    // update active button
+    document.querySelectorAll(".buttons button").forEach(btn => {
+      btn.classList.remove("active");
+    });
+
+    event.target.classList.add("active");
+  }
+
+  // Load default card
+  showCard('childcare');
+</script>
+
+<div class="steps">
+  <h3>How does it work?</h3>
+    <div class="step">
+      <img src="./Assets/number1.png" class="number">
+      <div class="step-text">
+      <h3>Sign up</h3>
+      <p>Create you account in minutes.</p>
+      </div>
+    </div>
+    <div class="step">
+      <img src="./Assets/number2.png" class="number">
+      <div class="step-text">
+      <h3>Post your job</h3>
+      <p>Tell us what are your needs, where and when.</p>
+      </div>
+    </div>
+    <div class="step">
+      <img src="./Assets/number3.png" class="number"> 
+      <div class="step-text">
+      <h3>Browse workers</h3>
+      <p>Compare trusted local profiles and views.</p>
+      </div>
+    </div>
+    <div class="step">
+      <img src="./Assets/number4.png" class="number"> 
+      <div class="step-text">
+      <h3>Chat, book and pay</h3>
+      <p>Choose the right person and pay directly.</p>
+      </div>
+    </div>
+</div>
+
+  <footer class="footer">
+
+  <div class="footer-links">
+    <a href="./about.html">About us</a>
+    <a href="./contact.html">Contact us</a>
+    <a href="./faq.html">FAQ</a>
+  </div>
+
+  <div class="footer-line"></div>
+
+  <p>© 2026 GFE — All rights reserved</p>
+
+</footer>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-light">
+
+  <nav class="navbar bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+      <img src="./Assets/GFE logo.png" alt="GFE logo" class="logo">
+      <div class="login-dropdown ms-auto">
+        <button class="btn btn-secondary dropdown-toggle login-btn" type="button" data-bs-toggle="dropdown">
+          <img src="./Assets/menu-icon.png" class="menu-icon" alt="Menu">
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end">
+          <li><a class="dropdown-item" href="./index.html">Home</a></li>
+          <li><a class="dropdown-item" href="./about.html">About Us</a></li>
+          <li><a class="dropdown-item" href="./contact.html">Contact Us</a></li>
+          <li><a class="dropdown-item" href="./faq.html">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="content">
+    <div class="card p-4 shadow" style="width: 400px;">
+      <div class="content-poster" style="padding: 20px;">
+        <h1>Sign Up</h1>
+      </div>
+      <form>
+        <div class="mb-3">
+          <input type="email" class="form-control" id="email" placeholder="Email" required>
+        </div>
+        <div class="mb-3">
+          <input type="password" class="form-control password" id="password" placeholder="Password" required>
+        </div>
+        <div class="divider"><span>I am a :</span></div>
+        <div style="display: flex;justify-content: space-between;">
+          <button type="button" class="btn role-btn" data-role="client">Client</button>
+          <button type="button" class="btn role-btn" data-role="jobseeker">Job seeker</button>
+        </div>
+        <input type="hidden" id="role">
+        <button type="submit" class="btn w-100" id="signup-btn">Register now</button>
+        <div class="text-center mt-3">
+          <span>Already have an account? </span><a href="login.html" style="color: #5e35b1;">Log in</a>
+        </div>
+      </form>
+    </div>
+    <p style="display: flex; justify-content: center; align-items: center;margin: 10px;">
+      <img src="./Assets/GFE logo.png" alt="GFE logo" class="logo">
+    </p>
+  </div>
+<footer class="footer">
+
+  <div class="footer-links">
+    <a href="./about.html">About us</a>
+    <a href="./contact.html">Contact us</a>
+    <a href="./faq.html">FAQ</a>
+  </div>
+
+  <div class="footer-line"></div>
+
+  <p>© 2026 GFE — All rights reserved</p>
+
+</footer>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="js/register.js" type="module"></script>
+</body>
+</html>

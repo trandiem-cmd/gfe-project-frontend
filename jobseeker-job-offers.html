@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GFE - Gig For Everyone</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="jobseeker-job-offers-page">
+
+  <div class="top-bar">
+    <img src="./Assets/GFE logo.png" class="logo">
+    <div class="right-side">
+      <a href="index.html" class="logout-btn">log out</a>
+      <img src="./Assets/menu-icon.png" class="menu-icon" id="menuBtn">
+    </div>
+  </div>
+
+  <div id="menuOverlay" class="menu-overlay" style="display: none;">
+    <div class="menu-card">
+      <div class="menu-top">
+        <img src="./Assets/candidate img2.png" class="menu-profile">
+        <span class="close-btn" id="closeBtn">✕</span>
+      </div>
+      <div class="menu-links">
+        <a href="jobseeker-job-offers.html">Search</a>
+        <a href="jobseeker-profile-page.html">My profile</a>
+        <a href="jobseeker-inbox.html">Messages</a>
+        <a href="jobseeker-application.html">My applications</a>
+        <a href="jobseeker-saved-jobs.html">❤️ Saved jobs</a>
+      </div>
+      <div class="menu-bottom">
+        <a href="contact.html" class="help-btn">Need Help?</a>
+        <a href="index.html" class="logout-small">Log out</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="purple-bar2">
+    <h3>Find jobs</h3>
+    <p>Browse available jobs and apply easily.</p>
+  </div>
+
+  <div style="padding: 10px 15px;">
+    <input type="text" id="searchInput" placeholder="🔍 Search jobs, locations, services..." 
+    style="width:100%; padding:10px; border-radius:10px; border:1px solid #ccc; position:relative; bottom: 80px;">
+  </div>
+
+  <div class="service-section">
+    <p class="service-title">Browse by service</p>
+    <div class="service-buttons">
+      <button class="service-btn" data-filter="childcare">👶 Childcare</button>
+      <button class="service-btn" data-filter="eldercare">👵 Eldercare</button>
+      <button class="service-btn" data-filter="cleaning">🧹 Cleaning</button>
+    </div>
+  </div>
+
+  <div id="job-list"></div>
+
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="#">About us</a>
+      <a href="#">Contact us</a>
+      <a href="#">FAQ</a>
+    </div>
+    <div class="footer-line"></div>
+    <p>© 2026 GFE — All rights reserved</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/jobseeker.js" type="module"></script>
+</body>
+</html>
