@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- MASHAIR - font awesome for eye icon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="bg-light login-page">
+
+  <nav class="navbar bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+      <img src="./Assets/GFE logo.png" alt="GFE logo" class="logo">
+    <div class="login-dropdown ms-auto">
+      <button class="btn btn-secondary" type="button" data-bs-toggle="dropdown">
+          <img src="./Assets/menu-icon.png" class="menu-icon" alt="Menu">
+      </button>
+        <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="./index.html">Home</a></li>
+            <li><a class="dropdown-item" href="./about.html">About Us</a></li>
+            <li><a class="dropdown-item" href="./contact.html">Contact Us</a></li>
+            <li><a class="dropdown-item" href="./faq.html">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="content">
+    <div class="card p-4 shadow" style="width: 400px;">
+      <div class="content-poster" style="padding: 20px;">
+        <h1>Log in</h1>
+        <!-- MASHAIR - error message with sign up link -->
+<div id="errorMsg" style="display:none; color:red; text-align:center; margin-top:10px;">
+    Invalid email or password. Don't have an account? 
+    <a href="signup.html" style="color:#c8c7c9; font-weight:bold;">Sign up here</a>
+</div>
+      </div>
+      <form>
+        <div class="mb-3">
+          <input type="email" class="form-control" id="email" placeholder="Email" required>
+        </div>
+        <!-- MASHAIR - added eye icon to password field -->
+<div class="mb-3 position-relative">
+    <input type="password" class="form-control" id="password" placeholder="Password" required>
+    <span class="fa fa-eye-slash toggle-pw" id="togglePassword" style="position:absolute; right:10px; top:50%; transform:translateY(-50%); cursor:pointer; color:#572290;"></span>
+</div>
+        <button type="submit" class="btn w-100 role-btn" id="login-btn1" data-role="client">Login as a client</button>
+        <button type="submit" class="btn w-100 role-btn" id="login-btn2" data-role="jobseeker">Login as a jobseeker</button>
+        <input type="hidden" id="role">
+      </form>
+    </div>
+    <p style="display: flex; justify-content: center; align-items: center;margin: 10px;">
+      <img src="./Assets/GFE logo.png" alt="GFE logo" class="logo">
+    </p>
+<footer class="footer">
+
+  <div class="footer-links">
+    <a href="./about.html">About us</a>
+    <a href="./contact.html">Contact us</a>
+    <a href="./faq.html">FAQ</a>
+  </div>
+
+  <div class="footer-line"></div>
+
+  <p>© 2026 GFE — All rights reserved</p>
+
+</footer>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="js/login.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GFE - Gig For Everyone</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="client-jobads-page">
+  <div class="top-bar">
+    <a href="index.html"><img src="./Assets/GFE logo.png" class="logo"></a>
+    <div class="right-side">
+      <button class="logout-btn logout-action">Log out</button>
+      <img src="./Assets/menu-icon.png" class="menu-icon" id="menuBtn">
+    </div>
+  </div>
+
+  <div id="menuOverlay" class="menu-overlay" style="display: none;">
+    <div class="menu-card">
+      <div class="menu-top">
+        <span class="close-btn" id="closeBtn">✕</span>
+      </div>
+      <div class="menu-links">
+        <a href="client-candidate.html">Search</a>
+        <a href="client-dashboard.html">My dashboard</a>
+        <a href="client-inbox.html">Messages</a>
+        <a href="client-jobads.html">My job ads</a>
+        <a href="client-post.html">Post a new job</a>
+        <a href="client-profile.html">My profile</a>
+      </div>
+      <div class="menu-bottom">
+        <a href="#" class="logout-small logout-action">Log out</a>
+      </div>
+    </div>
+  </div>
+
+  <section class="jobs">
+    <h3 class="mt-4">My Job Ads</h3>
+    <div id="job-list"></div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="./about.html">About us</a>
+      <a href="./contact.html">Contact us</a>
+      <a href="./faq.html">FAQ</a>
+    </div>
+
+    <div class="footer-line"></div>
+
+    <p>© 2026 GFE — All rights reserved</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="module" src="js/logout.js"></script>
+  <script src="js/client/client-shared.js" type="module" defer></script>
+  <script src="js/client/client-jobads.js" type="module" defer></script> 
+</body>
+</html>

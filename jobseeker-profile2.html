@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-light">
+    <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+        <img src="./Assets/GFE logo.png" alt="GFE logo" class="logo">
+        <div class="login-dropdown ms-auto">
+            <button class="btn btn-secondary dropdown-toggle login-btn" type="button" data-bs-toggle="dropdown">
+            <img src="./Assets/menu-icon.png" class="menu-icon" alt="Menu">
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="./index.html">Home</a></li>
+            <li><a class="dropdown-item" href="./about.html">About Us</a></li>
+            <li><a class="dropdown-item" href="./contact.html">Contact Us</a></li>
+            <li><a class="dropdown-item" href="./faq.html">FAQ</a></li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <div class="content">
+      <div class="content-poster">
+          <h1>Complete your profile</h1>
+          <h2>What service do you offer?</h2>
+      </div>
+      <h5 class="mt-4">Step 2 of 4</h5>
+      <div class="progress-custom mb-2">
+          <div class="progress-bar-custom2"></div>
+      </div>
+      <div class="mb-4">
+          <span class="dot"></span>
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+      </div>
+      <h4 class="fw-bold mt-4">Choose a service</h4>
+      <form id="profileForm">
+        <div class="service-item active" data-value="childcare">
+          <div>
+            <div class="service-title">🧸 Childcare</div>
+            <small>Babysitting, tutoring, daycare...</small>
+          </div>
+          <div class="radio-circle"></div>
+        </div>
+        <div class="service-item" data-value="cleaning">
+          <div>
+            <div class="service-title">🧼 Cleaning</div>
+            <small>Housekeeping, maid, janitor...</small>
+          </div>
+          <div class="radio-circle"></div>
+        </div>
+        <div class="service-item" data-value="eldercare">
+          <div>
+            <div class="service-title">👴🏻 Eldercare</div>
+            <small>Daily help, companionship, support...</small>
+          </div>
+          <div class="radio-circle"></div>
+        </div>
+        <div>
+          <label class="mb-2">About you</label>
+          <textarea rows="4" class="form-control" id="about-you" style="background-color: #f0e9f0"
+          placeholder="Tell clients about yourself, your experience, and the type of work you offer."></textarea>
+        </div>
+        <div class="form-actions">
+          <button type="button" class="back-btn" id="back-btn">Back</button>
+          <button type="button" class="next-btn" id="next2-btn2">Next →</button>
+        </div>
+      </form>
+
+      <p class="add-logo">
+        <img src="./Assets/GFE logo.png" alt="GFE logo" class="logo">
+      </p>
+      <footer class="footer">
+        <div class="footer-links">
+          <a href="./about.html">About us</a>
+          <a href="./contact.html">Contact us</a>
+          <a href="./faq.html">FAQ</a>
+        </div>
+        <div class="footer-line"></div>
+        <p>© 2026 GFE — All rights reserved</p>
+      </footer>
+    </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/jobseeker/jobseeker-shared.js" type="module" defer></script>
+  <script src="js/jobseeker/jobseeker-profile-setup.js" type="module" defer></script>
+</body>
+</html>

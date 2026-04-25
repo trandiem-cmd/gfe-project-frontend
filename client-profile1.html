@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-light">
+    <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+        <img src="./Assets/GFE logo.png" alt="GFE logo" class="logo">
+        <div class="login-dropdown ms-auto">
+            <button class="btn btn-secondary dropdown-toggle login-btn" type="button" data-bs-toggle="dropdown">
+            <img src="./Assets/menu-icon.png" class="menu-icon" alt="Menu">
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="./index.html">Home</a></li>
+            <li><a class="dropdown-item" href="./about.html">About Us</a></li>
+            <li><a class="dropdown-item" href="./contact.html">Contact Us</a></li>
+            <li><a class="dropdown-item" href="./faq.html">FAQ</a></li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <div class="content">
+        <div class="content-poster">
+            <h1>Complete your profile</h1>
+            <h2>Tell us a bit about yourself to get started</h2>
+        </div>
+          <!-- Form -->
+    <h4 class="fw-bold mt-4">About you</h4>
+      <form id="profileForm">
+        <div class="mb-3">
+            <input type="text" class="form-control" id="name" placeholder="Full name">
+        </div>
+        <div class="mb-3">
+            <input type="email" class="form-control" id="contact-email" placeholder="Email">
+        </div>
+        <div class="mb-3">
+            <input type="text" class="form-control" id="contact-phone" placeholder="Phone number">
+        </div>
+        <div class="mb-3">
+          <div class="location-wrapper">
+            
+            <input type="text" id="location" class="form-control" placeholder="Select location" readonly>
+
+            <div id="locationDropdown" class="dropdown-box d-none">
+              <select id="city" class="form-select mb-2">
+                <option value="">Select city</option>
+                <option value="Helsinki">Helsinki</option>
+                <option value="Espoo">Espoo</option>
+                <option value="Vantaa">Vantaa</option>
+                <option value="Tampere">Tampere</option>
+                <option value="Turku">Turku</option>
+                <option value="Oulu">Oulu</option>
+              </select>
+
+              <select id="district" class="form-select">
+                <option value="">Select district</option>
+              </select>
+            </div>
+          </div>
+        </div>
+          <button type="submit" class="next-btn" id="submit-profile-btn1">Complete Profile →</button>
+      </form>
+    <p class="add-logo">
+      <img src="./Assets/GFE logo.png" alt="GFE logo" class="logo">
+    </p>
+    <footer class="footer">
+
+  <div class="footer-links">
+    <a href="./about.html">About us</a>
+    <a href="./contact.html">Contact us</a>
+    <a href="./faq.html">FAQ</a>
+  </div>
+
+  <div class="footer-line"></div>
+
+  <p>© 2026 GFE — All rights reserved</p>
+
+</footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script src="js/client/client-profile-setup.js" type="module" defer></script>
+</html>

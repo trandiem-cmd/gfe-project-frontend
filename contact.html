@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GFE - Gig For Everyone</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+ <nav class="navbar bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+      <img src="./Assets/GFE logo.png" alt="GFE logo" class="logo">
+    <div class="login-dropdown ms-auto">
+      <a href="signup.html" class="logout-btn">Sign up</a>
+      <a href="login.html" class="logout-btn">Log in</a>
+      <button class="btn btn-secondary" type="button" data-bs-toggle="dropdown">
+          <img src="./Assets/menu-icon.png" class="menu-icon" alt="Menu">
+      </button>
+        <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="./index.html">Home</a></li>
+            <li><a class="dropdown-item" href="./about.html">About Us</a></li>
+            <li><a class="dropdown-item" href="./contact.html">Contact Us</a></li>
+            <li><a class="dropdown-item" href="./faq.html">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <h2 class="topic">Contact Us</h2>
+<div class="what-is-GFE">
+    <p>We are here to help. If you have questions, feedback, or need support, get in touch with us.</p>
+    <form class="contact-form">
+        <div class="mb-3">
+            <input name="full_name" type="text" class="form-control" id="exampleInputName" placeholder="Full name">
+        </div>
+        <div class="mb-3">
+            <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email address">
+        </div>
+        <div class="mb-3">
+            <input name="phone" type="number" class="form-control" id="exampleInputPhone" placeholder="Phone number">
+        </div>
+        <div class="mb-3">
+            <input name="subject" type="text" class="form-control" id="exampleInputSubject" placeholder="Subject">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+            <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+        </div>
+        <button type="submit" class="login-btn">Send Message</button>
+        <p><label class="form-last-label">We usually reply within a few hours.</label></p>
+    </form>
+</div>
+<div class="contact-info">
+    <p><img src="./Assets/mark_email_unread.png"> support@gfe.com</p>
+    <p><img src="./Assets/Phone.png">Phone: +3583397629</p>
+    <p><img src="./Assets/location_on.png">Location: Finland</p>
+</div>
+
+<div class="last-line">
+    <p>We aim to respond as soon as possible.</p>
+</div>
+<script type="module" src="js/contact.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
